@@ -5,13 +5,14 @@ int cbinsearch(int *arr, int size, int value) {
   int k = 0; //счетчик
   while (i < j) {
     int mid = i+(j-i)/2;
-    if (arr[mid] == value)
+    if (arr[mid] == value) {
       while (arr[mid] == value) {
         k++;
         i++;
       }
+    }
     else if (arr[mid] > value)
-      j = mid;
+        j = mid;
     else
       i = mid+1;
   }
