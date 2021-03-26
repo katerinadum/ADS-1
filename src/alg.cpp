@@ -18,6 +18,6 @@ int cbinsearch(int *arr, int size, int value) {
   }
   if (k > 0)
     return k;
-  else 
+  else
     return 0; // если ничего не найдено
 }
