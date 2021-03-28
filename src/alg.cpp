@@ -4,7 +4,7 @@ int cbinsearch(int *arr, int size, int value) {
   int i = 0, j = size - 1; //i - левая граница массива, j - правая
   int k = 0; //счетчик
   while (i < j) {
-    int mid = i + (j - i) / 2;
+    int mid = (i + j) / 2;
     if (arr[mid] < value)
       i = mid + 1;
     else
